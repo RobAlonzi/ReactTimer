@@ -10,7 +10,9 @@ module.exports = function(config){
 			'./src/tests/**/*.test.jsx': ['webpack', 'sourcemap']
 		},
 		reporters: ["mocha"],
+		//reporters: ["mocha", "progress"],
 		client: {
+			//captureConsole: true,
 			mocha: {
 				timeout: "5000"
 			}
